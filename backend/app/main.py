@@ -4,7 +4,6 @@ from sqlalchemy import text
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
-from app.api.auth import router as auth_router
 from app.api.visitor_sessions import router as visitor_sessions_router
 from app.config import settings
 from app.db import get_db
@@ -15,11 +14,10 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[settings.frontend_origin],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "DELETE", "PUT", "PATCH"],
+    allow_methods=["GET", "POST", "DELETE"],
     allow_headers=["Authorization", "Content-Type"],
 )
 app.include_router(visitor_sessions_router)
-app.include_router(auth_router)
 
 
 @app.get("/health")
