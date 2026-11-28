@@ -59,3 +59,13 @@ def test_runner_records_warmup_and_resumes_completed_calls(tmp_path, monkeypatch
     assert len(second["raw_rows"]) == 3
     assert FakeProvider.calls == 3
 
+
+
+def test_format_context_shows_optional_source_text():
+    with_text = runner._format_context(
+        {"sources": [{"id": "S1", "title": "Titre", "text": "Extrait officiel."}]}
+    )
+    assert "[S1] excerpt: Extrait officiel." in with_text
+
+    title_only = runner._format_context({"sources": [{"id": "S1", "title": "Titre"}]})
+    assert "excerpt" not in title_only
