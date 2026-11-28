@@ -116,3 +116,20 @@ Les migrations versionnées sont appliquées avec `alembic upgrade head` depuis
 modèles catalogue et comptes responsables restent une base à réconcilier avec
 les spécifications finales de SA-12/13/14; les migrations doivent être relues
 avant application sur une base partagée.
+
+## Intégration continue (GitHub Actions)
+
+Le workflow [.github/workflows/ci.yml](.github/workflows/ci.yml) s’exécute à
+chaque push sur `master`, sur chaque pull request, et peut être lancé à la main
+(onglet Actions → CI → Run workflow). Il contient cinq jobs indépendants :
+
+| Job | Vérifie |
+|---|---|
+| Backend · tests unitaires | `pytest backend/tests` (SQLite en mémoire) |
+| Backend · migrations | PostgreSQL 16 + pgvector : `alembic upgrade head`, `alembic check` (modèles ↔ migrations), puis downgrade/upgrade |
+| Évaluation LLM · tests | `pytest eval/llm_comparison/tests` (Ollama simulé, aucun modèle téléchargé) |
+| Frontend · build + audit | `npm ci`, `npm run build`, `npm audit --omit=dev` |
+| Docker · compose + images | validation de `docker-compose.yml` et build des images |
+
+Aucun secret n’est nécessaire : la CI utilise des identifiants factices et
+`.env.example`. Le benchmark LLM réel (avec Ollama) reste à lancer en local.
