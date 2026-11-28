@@ -2,3 +2,10 @@
 .venv/
 **/.venv/
 __pycache__/
+backend/scraper/output/cache/
+eval/llm_comparison/results/human_review_key.json
+eval/llm_comparison/results/raw_runs.jsonl
+eval/llm_comparison/results/run_metadata.json
+eval/llm_comparison/results/human_review_blind.csv
+eval/llm_comparison/results/human_ratings_merged.csv
+eval/llm_comparison/results/.matplotlib/

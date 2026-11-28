@@ -28,6 +28,31 @@ uvicorn app.main:app --app-dir backend --reload
 
 `GET http://127.0.0.1:8000/health/db` checks the database connection.
 
+## IIT public catalog scraper
+
+Set `SCRAPER_CONTACT_EMAIL` in `.env` to the project contact address. From the
+repository root, install the requirements and run the scraper from `backend/`:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python.exe -m pip install -r backend/requirements.txt
+Set-Location backend
+..\.venv\Scripts\python.exe -m scraper.run
+```
+
+The scraper checks IIT's `robots.txt` before requesting pages, uses the
+configured project user agent, follows only the allowlisted IIT URLs, waits at
+least two seconds between requests, and caps requests at 40 pages. It removes
+contact details, student-result/news panels, and bank details before writing
+its ignored local cache. It does not write to PostgreSQL.
+
+The reviewable catalog is written to
+`backend/seed/iit_scraped_catalog.json`; page coverage is written to
+`backend/scraper/output/coverage.md`. Values carry source URL, consultation
+date, and a content hash. The model does not represent admission conditions or
+career opportunities, so those appear only in the coverage report. Generated
+catalog values need human review before database loading.
+
 ## Schema migrations (SA-17)
 
 The catalog and responsible-account models are a baseline pending reconciliation
