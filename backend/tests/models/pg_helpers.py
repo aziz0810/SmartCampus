@@ -18,6 +18,9 @@ from sqlalchemy.exc import OperationalError
 BACKEND_DIR = Path(__file__).resolve().parents[2]
 ENV_FILE = BACKEND_DIR.parent / ".env"
 DB_KEYS = ("DB_HOST", "DB_PORT", "APP_DB_NAME", "APP_DB_USER", "APP_DB_PASSWORD")
+# Tables whose rows are written by migrations themselves (a1b2c3d4e5f6 seeds
+# the candidat/responsable roles); they do not count as user data.
+MIGRATION_SEEDED_TABLES = {"alembic_version", "role"}
 
 
 def _db_env() -> dict[str, str]:
@@ -70,7 +73,7 @@ def connect_or_skip() -> Engine:
 
 
 def non_empty_tables(engine: Engine) -> dict[str, int]:
-    names = [n for n in inspect(engine).get_table_names() if n != "alembic_version"]
+    names = [n for n in inspect(engine).get_table_names() if n not in MIGRATION_SEEDED_TABLES]
     with engine.connect() as connection:
         counts = {
             name: connection.execute(text(f'SELECT count(*) FROM "{name}"')).scalar_one()
