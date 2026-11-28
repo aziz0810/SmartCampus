@@ -13,6 +13,12 @@ from app.models.catalog import (
     SubjectPrerequisite,
     TuitionFee,
 )
+from app.models.documents import (
+    Document,
+    DocumentEvent,
+    DocumentSyncJob,
+    DocumentVersion,
+)
 from app.models.identity import AppUser, Role
 from app.models.visitor import VisitorMessage, VisitorSession
 
@@ -21,6 +27,10 @@ __all__ = [
     "AdmissionConditionQualification",
     "AppUser",
     "Base",
+    "Document",
+    "DocumentEvent",
+    "DocumentSyncJob",
+    "DocumentVersion",
     "Formation",
     "FormationPrerequisite",
     "Institution",
