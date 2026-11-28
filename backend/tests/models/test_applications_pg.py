@@ -19,7 +19,7 @@ SA13_TABLES = (
     "preregistration", "equivalence_request", "appointment_slot", "appointment",
     "interview", "request_status_history",
 )
-PREVIOUS_REVISION = "b4d6f8a0c2e3"  # either parent of the merge works
+PREVIOUS_REVISION = "b4d6f8a0c2e3"
 SOURCE_NOTE = "SA-13 test (fictional demo row)"
 
 
@@ -94,10 +94,8 @@ def _expect(session, constraint: str):
         session.flush()
 
 
-def test_tables_exist_and_heads_are_merged(engine):
+def test_tables_exist_after_upgrade(engine):
     assert set(SA13_TABLES) <= set(inspect(engine).get_table_names())
-    columns = {c["name"] for c in inspect(engine).get_columns("visitor_session")}
-    assert "claimed_by_user_id" in columns  # SA-28/29 branch is applied too
 
 
 def test_profile_permissions_and_conversation(session, world):
@@ -115,7 +113,6 @@ def test_profile_permissions_and_conversation(session, world):
     ))
     visitor = VisitorSession(
         id=uuid.uuid4(), token_hash="a" * 64, expires_at=_now() + timedelta(hours=1),
-        claimed_by_user_id=world.candidate.id,
     )
     session.add(visitor)
     session.flush()

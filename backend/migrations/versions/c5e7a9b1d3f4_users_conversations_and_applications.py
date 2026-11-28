@@ -4,11 +4,8 @@ Adds candidate_profile, staff_permission, conversation, conversation_message,
 preregistration, equivalence_request, appointment_slot, appointment,
 interview and request_status_history. Existing tables are not modified.
 
-Also merges the two migration heads: a1b2c3d4e5f6 (SA-28/29 auth) and
-b4d6f8a0c2e3 (SA-14 documents) both followed 9b20a2c83f71.
-
 Revision ID: c5e7a9b1d3f4
-Revises: a1b2c3d4e5f6, b4d6f8a0c2e3
+Revises: b4d6f8a0c2e3
 Create Date: 2026-11-28 16:15:52.300891
 
 """
@@ -20,7 +17,7 @@ from sqlalchemy.dialects import postgresql
 
 # revision identifiers, used by Alembic.
 revision: str = 'c5e7a9b1d3f4'
-down_revision: Union[str, Sequence[str], None] = ('a1b2c3d4e5f6', 'b4d6f8a0c2e3')
+down_revision: Union[str, Sequence[str], None] = 'b4d6f8a0c2e3'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 
