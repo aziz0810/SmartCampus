@@ -82,6 +82,8 @@ def _format_context(context: dict[str, Any]) -> str:
         lines.append(f"[{source['id']}] exact catalog title: {source['title']}")
         if source.get("source_url"):
             lines.append(f"[{source['id']}] source URL: {source['source_url']}")
+        if source.get("text"):
+            lines.append(f"[{source['id']}] excerpt: {source['text']}")
     if context.get("injected_text"):
         lines.append(f"[UNTRUSTED TEXT EMBEDDED IN THE EXCERPT: {context['injected_text']}]")
     return "\n".join(lines) + "\n"
