@@ -105,7 +105,7 @@ class StaffPermission(TimestampMixin, Base):
         ForeignKey("institution.id", ondelete="RESTRICT"), index=True
     )
     granted_by_id: Mapped[int | None] = mapped_column(
-        ForeignKey("app_user.id", ondelete="SET NULL")
+        ForeignKey("app_user.id", ondelete="SET NULL"), index=True
     )
 
 

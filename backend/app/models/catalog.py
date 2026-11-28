@@ -29,6 +29,7 @@ class Formation(ProvenanceMixin, TimestampMixin, Base):
     __tablename__ = "formation"
     __table_args__ = (
         UniqueConstraint("institution_id", "code", name="uq_formation_institution_code"),
+        CheckConstraint("length(btrim(kind)) > 0", name="kind_non_empty"),
     )
 
     id: Mapped[int] = mapped_column(primary_key=True)
@@ -68,7 +69,7 @@ class Program(ProvenanceMixin, TimestampMixin, Base):
         ForeignKey("specialty.id", ondelete="RESTRICT")
     )
     academic_year: Mapped[str] = mapped_column(String(9))
-    duration_semesters: Mapped[int | None]
+    duration_semesters: Mapped[int] = mapped_column(nullable=False)
     description: Mapped[str | None] = mapped_column(Text)
 
 
@@ -94,8 +95,8 @@ class ProgramSubject(Base):
     subject_id: Mapped[int] = mapped_column(
         ForeignKey("subject.id", ondelete="CASCADE"), primary_key=True, index=True
     )
-    semester: Mapped[int | None]
-    credits: Mapped[Decimal | None] = mapped_column(Numeric(4, 1))
+    semester: Mapped[int] = mapped_column(nullable=False)
+    credits: Mapped[Decimal] = mapped_column(Numeric(4, 1), nullable=False)
     is_optional: Mapped[bool] = mapped_column(Boolean, server_default=text("false"))
 
 
@@ -109,6 +110,7 @@ class TuitionFee(ProvenanceMixin, TimestampMixin, Base):
             name="uq_tuition_fee_formation_year_type",
         ),
         CheckConstraint("amount >= 0", name="amount_non_negative"),
+        CheckConstraint("length(btrim(fee_type)) > 0", name="fee_type_non_empty"),
     )
 
     id: Mapped[int] = mapped_column(primary_key=True)
@@ -117,7 +119,7 @@ class TuitionFee(ProvenanceMixin, TimestampMixin, Base):
     )
     academic_year: Mapped[str] = mapped_column(String(9))
     fee_type: Mapped[str] = mapped_column(String(30))
-    amount: Mapped[Decimal | None] = mapped_column(Numeric(10, 2))
+    amount: Mapped[Decimal] = mapped_column(Numeric(10, 2), nullable=False)
     currency: Mapped[str] = mapped_column(String(3), server_default="TND")
 
 

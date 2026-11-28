@@ -1,0 +1,846 @@
+{
+  "meta": {
+    "generated_from": "iit_scraped_catalog.json",
+    "academic_year": "2026-2027",
+    "notice": "Source-backed rows are still marked for review. All curriculum, tuition and ISB placeholder records are fictitious."
+  },
+  "institutions": [
+    {
+      "code": "iit",
+      "name": "IIT Sfax",
+      "website_url": "https://iit.tn"
+    },
+    {
+      "code": "isb",
+      "name": "ISB",
+      "website_url": null
+    }
+  ],
+  "roles": [
+    {
+      "code": "candidate",
+      "name": "Candidate (reference role)"
+    },
+    {
+      "code": "admin",
+      "name": "Administrator (demo)"
+    },
+    {
+      "code": "academic_officer",
+      "name": "Academic Officer (demo)"
+    },
+    {
+      "code": "finance_officer",
+      "name": "Finance Officer (demo)"
+    },
+    {
+      "code": "interview_officer",
+      "name": "Interview Officer (demo)"
+    },
+    {
+      "code": "institution_officer",
+      "name": "Institution Officer (demo)"
+    }
+  ],
+  "app_users": [
+    {
+      "email": "admin.demo@example.com",
+      "full_name": "Demo Administrator",
+      "role_code": "admin",
+      "institution_code": null,
+      "is_active": true
+    },
+    {
+      "email": "academic.demo@example.com",
+      "full_name": "Demo Academic Officer",
+      "role_code": "academic_officer",
+      "institution_code": "iit",
+      "is_active": true
+    },
+    {
+      "email": "finance.demo@example.com",
+      "full_name": "Demo Finance Officer",
+      "role_code": "finance_officer",
+      "institution_code": "iit",
+      "is_active": true
+    },
+    {
+      "email": "interview.demo@example.com",
+      "full_name": "Demo Interview Officer",
+      "role_code": "interview_officer",
+      "institution_code": "iit",
+      "is_active": true
+    },
+    {
+      "email": "institution.demo@example.com",
+      "full_name": "Demo Institution Officer",
+      "role_code": "institution_officer",
+      "institution_code": "isb",
+      "is_active": true
+    },
+    {
+      "email": "interview.inactive@example.com",
+      "full_name": "Inactive Demo Interview Officer",
+      "role_code": "interview_officer",
+      "institution_code": "iit",
+      "is_active": false
+    }
+  ],
+  "formations": [
+    {
+      "code": "architecture",
+      "institution_code": "iit",
+      "name": "École d'Architecture Privée à Sfax",
+      "kind": "architecture",
+      "description": "A travers son département architecture “International School of Architecture (ISA)“, l’Institut International de Technologie de Sfax (IIT) assure une formation de haut niveau en architecture, agréée par le Ministère de l’enseignement supérieur et de la recherche scientifique.",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/architecture-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "ing-genie-civil",
+      "institution_code": "iit",
+      "name": "Cycle Ingénieur Génie Civil à Sfax",
+      "kind": "ingenieur",
+      "description": "Le génie civil est l’ensemble des activités techniques nécessaires à la réalisation de constructions civiles.L’ingénieur civil s’occupe de la conception, de la construction, de la gestion, de l’entretien et de la réparation des ouvrages en domaine de bâtiments et travaux publics BTP.",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-civil/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "ing-genie-industriel",
+      "institution_code": "iit",
+      "name": "Cycle Ingénieur Génie Industriel à Sfax",
+      "kind": "ingenieur",
+      "description": "La formation en génie industriel vise à former des professionnels capables d’optimiser les processus et les systèmes industriels pour améliorer l’efficacité, la qualité, la productivité et la compétitivité des entreprises.",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "ing-genie-mecanique",
+      "institution_code": "iit",
+      "name": "Cycle Ingénieur Génie Mécanique à Sfax",
+      "kind": "ingenieur",
+      "description": "Les étudiants qui suivent la formation en ingénierie mécanique peuvent s’attendre à développer les compétences suivantes :",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-mecanique-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "ing-genie-procedes",
+      "institution_code": "iit",
+      "name": "Ingénieur Génie des Procédés à Sfax",
+      "kind": "ingenieur",
+      "description": "Le génie des procédés peut être définie comme la convergence de plusieurs disciplines qui combinent les connaissances et l’expertise nécessaires pour soutenir la transformation industrielle de matériaux bruts ou synthétiques en un ou plusieurs produits manufacturés en utilisant des opérations unitaires.",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/genie-des-procedes/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "ing-info",
+      "institution_code": "iit",
+      "name": "Cycle Ingénieur Génie Informatique à Sfax",
+      "kind": "ingenieur",
+      "description": "La formation en génie informatique vise à doter les futurs ingénieurs de solides compétences scientifiques, techniques et professionnelles afin de leur permettre de répondre aux défis liés à l’évolution rapide du monde numérique. Elle associe des fondements théoriques solides à un apprentissage pratique reposant sur des travaux appliqués, des projets concrets et des possibilités de collaboration avec des partenaires industriels.",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-informatique-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "lic-big-data",
+      "institution_code": "iit",
+      "name": "Licence Big Data à Sfax",
+      "kind": "licence",
+      "description": "La Licence Big Data & Intelligence Artificielle forme des spécialistes capables de collecter, analyser et valoriser les données afin de développer des solutions d’intelligence artificielle répondant aux besoins des entreprises. La formation combine programmation, data science, machine learning, cloud computing et intelligence artificielle appliquée pour préparer les étudiants aux métiers de la transformation numérique.",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/big-data-et-analyse-de-donnees/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "lic-info",
+      "institution_code": "iit",
+      "name": "Licence Génie Logiciel à Sfax",
+      "kind": "licence",
+      "description": "Cette licence prépare les étudiants à concevoir, développer, tester et déployer des applications logicielles modernes répondant aux besoins des entreprises. Elle couvre l’ensemble du cycle de développement logiciel en intégrant les technologies web, mobiles, cloud et les approches de développement intelligent.",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/genie-logiciel-systemes-intelligents/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "lic-iot",
+      "institution_code": "iit",
+      "name": "Licence Systèmes Embarqués à Sfax",
+      "kind": "licence",
+      "description": "Cette licence forme des ingénieurs techniciens spécialisés dans la conception de systèmes embarqués et d’objets connectés. Les étudiants acquièrent des compétences en électronique, programmation embarquée, Internet des Objets, systèmes temps réel et intelligence artificielle embarquée pour répondre aux besoins de l’Industrie 4.0.",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/systemes-embarques-internet-des-objets-iot/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "lic-mecatronique",
+      "institution_code": "iit",
+      "name": "Licence Mécatronique à Sfax",
+      "kind": "licence",
+      "description": "Principaux modules : Fondamentaux scientifiques Mathématiques Physique Électronique analogique et numérique Circuits électriques Matériaux pour l’ingénieur Informatique & Intelligence Artificielle Algorithmique et programmation Python Programmation orientée objet Intelligence Artificielle Vision industrielle et traitement d’images Mécatronique & Robotique Introduction à la robotique Robotique mobile et drones Cinématique et dynamique des robots Systèmes mécatroniques Automatisation & Systèmes embarqués Microcontrôleurs Architecture et programmation embarquée Systèmes temps réel IoT industriel & Edge Computing Automatique et régulation Commande numérique Industrie 4.0 Fabrication additive (Impression 3D) Simulation industrielle Maintenance prédictive 4.0 Cybersécurité des systèmes industriels Professionnalisation Développement personnel et professionnel Entrepreneuriat et innovation Stages en entreprise Projet de Fin d’Études (PFE)",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/licence-en-mecatronique-systemes-intelligents/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "lic-sys-elec",
+      "institution_code": "iit",
+      "name": "Licence Énergies Renouvelables à Sfax",
+      "kind": "licence",
+      "description": "La Licence en Systèmes Électriques Intelligents & Énergies Renouvelables forme des diplômés capables de concevoir, exploiter et maintenir les systèmes électriques modernes intégrant les technologies numériques et les énergies renouvelables. Cette formation répond aux besoins de la transition énergétique en développant des compétences en Smart Grids, automatisation, intelligence artificielle appliquée à l’énergie, Internet des Objets (IoT) et efficacité énergétique. Grâce à une approche fortement orientée vers la pratique (travaux de laboratoire, projets, stages et études de cas), les étudiants acquièrent les compétences recherchées par les entreprises industrielles, les bureaux d’études et les acteurs du secteur de l’énergie, en Tunisie comme à l’international.",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/licence-en-systemes-electriques-intelligents-energies-renouvelables/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "prepa",
+      "institution_code": "iit",
+      "name": "Cycle Préparatoire Ingénieur à Sfax",
+      "kind": "prepa",
+      "description": "MP1 ♦GM 2 : Physique 2 ♦GM 3 : Analyse ♦GM 4 : Algèbre ♦GM 5 : Chimie ♦GM 6 : Informatique ♦GM 7 : S.T.A ♦GM 8: Anglais ♦GM 9: Francais",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/prepa/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "res-cyber",
+      "institution_code": "iit",
+      "name": "Licence Cybersécurité à Sfax",
+      "kind": "licence",
+      "description": "La Licence Réseaux & Cybersécurité forme des experts capables de concevoir, administrer et sécuriser les infrastructures informatiques modernes. Les étudiants développent des compétences avancées en réseaux, cybersécurité, cloud computing et protection des systèmes d’information face aux cybermenaces",
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/reseaux-et-cybersecurite/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "prepa-demo",
+      "institution_code": "iit",
+      "name": "Preparatory Cycle (demo)",
+      "kind": "prepa",
+      "description": "Fictitious comparison record.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "isb-demo",
+      "institution_code": "isb",
+      "name": "ISB Demo Formation",
+      "kind": "demo",
+      "description": "Fictitious placeholder only; no ISB program or fees are asserted.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    }
+  ],
+  "specialties": [
+    {
+      "code": "general",
+      "formation_code": "architecture",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/architecture-2/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "ing-genie-civil",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-civil/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "ing-genie-industriel",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "ing-genie-mecanique",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-mecanique-2/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "ing-genie-procedes",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/genie-des-procedes/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "ing-info",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-informatique-2/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "lic-big-data",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/big-data-et-analyse-de-donnees/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "lic-info",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/genie-logiciel-systemes-intelligents/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "lic-iot",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/systemes-embarques-internet-des-objets-iot/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "lic-mecatronique",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/licence-en-mecatronique-systemes-intelligents/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "lic-sys-elec",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/licence-en-systemes-electriques-intelligents-energies-renouvelables/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "prepa",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/prepa/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "res-cyber",
+      "name": "general",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/reseaux-et-cybersecurite/; consulted 2026-11-28; needs_review=true."
+    },
+    {
+      "code": "general",
+      "formation_code": "prepa-demo",
+      "name": "General (demo)",
+      "description": null,
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "general",
+      "formation_code": "isb-demo",
+      "name": "General (demo)",
+      "description": null,
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    }
+  ],
+  "programs": [
+    {
+      "code": "prepa-year1-demo",
+      "formation_code": "prepa",
+      "specialty_code": "general",
+      "academic_year": "2026-2027",
+      "duration_semesters": 4,
+      "description": "Preparatory cycle year 1 (fictitious demo curriculum).",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "prepa-year2-demo",
+      "formation_code": "prepa-demo",
+      "specialty_code": "general",
+      "academic_year": "2026-2027",
+      "duration_semesters": 4,
+      "description": "Preparatory cycle year 2 (fictitious demo curriculum).",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "lic-info-demo",
+      "formation_code": "lic-info",
+      "specialty_code": "general",
+      "academic_year": "2026-2027",
+      "duration_semesters": 4,
+      "description": "Software engineering licence (fictitious demo curriculum).",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "lic-big-data-demo",
+      "formation_code": "lic-big-data",
+      "specialty_code": "general",
+      "academic_year": "2026-2027",
+      "duration_semesters": 4,
+      "description": "Big data licence (fictitious demo curriculum).",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "ing-info-demo",
+      "formation_code": "ing-info",
+      "specialty_code": "general",
+      "academic_year": "2026-2027",
+      "duration_semesters": 4,
+      "description": "Computer engineering cycle (fictitious demo curriculum).",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "ing-civil-demo",
+      "formation_code": "ing-genie-civil",
+      "specialty_code": "general",
+      "academic_year": "2026-2027",
+      "duration_semesters": 4,
+      "description": "Civil engineering cycle (fictitious demo curriculum).",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    }
+  ],
+  "subjects": [
+    {
+      "code": "consulting-en-gestion-et-ingenierie",
+      "name": "Consulting en gestion et ingénierie",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "energie-et-environnement",
+      "name": "Énergie et environnement",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "industrie-manufacturiere-automobile-aeronautique-e",
+      "name": "Industrie manufacturière (automobile, aéronautique, électronique, agroalimentaire, biens de consommation)",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "logistique-et-supply-chain",
+      "name": "Logistique et supply chain",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "secteur",
+      "name": "Secteur",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "services-de-sante",
+      "name": "Services de santé",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "technologies-de-linformation-et-de-la-communicatio",
+      "name": "Technologies de l’information et de la communication (TIC)",
+      "description": null,
+      "is_demo": false,
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28; needs_review=true; source facts have not been independently verified."
+    },
+    {
+      "code": "programming-fundamentals",
+      "name": "Programming Fundamentals",
+      "description": "Introductory example module.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "data-foundations",
+      "name": "Data Foundations",
+      "description": "Introductory example module.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "database-systems",
+      "name": "Database Systems",
+      "description": "Example relational and SQL module.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "web-engineering",
+      "name": "Web Engineering",
+      "description": "Example application engineering module.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "algorithms",
+      "name": "Algorithms and Complexity",
+      "description": "Example computing module.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "software-design",
+      "name": "Software Design",
+      "description": "Example engineering module.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "statistics",
+      "name": "Applied Statistics",
+      "description": "Example quantitative methods module.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "code": "ai-introduction",
+      "name": "Introduction to Artificial Intelligence",
+      "description": "Example introductory AI module.",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    }
+  ],
+  "program_subjects": [
+    {
+      "program_code": "prepa-year1-demo",
+      "subject_code": "programming-fundamentals",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year1-demo",
+      "subject_code": "data-foundations",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year1-demo",
+      "subject_code": "database-systems",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year1-demo",
+      "subject_code": "web-engineering",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year1-demo",
+      "subject_code": "algorithms",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year1-demo",
+      "subject_code": "software-design",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year1-demo",
+      "subject_code": "statistics",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year1-demo",
+      "subject_code": "ai-introduction",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year2-demo",
+      "subject_code": "programming-fundamentals",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year2-demo",
+      "subject_code": "data-foundations",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year2-demo",
+      "subject_code": "database-systems",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year2-demo",
+      "subject_code": "web-engineering",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year2-demo",
+      "subject_code": "algorithms",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year2-demo",
+      "subject_code": "software-design",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year2-demo",
+      "subject_code": "statistics",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "prepa-year2-demo",
+      "subject_code": "ai-introduction",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-info-demo",
+      "subject_code": "programming-fundamentals",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-info-demo",
+      "subject_code": "data-foundations",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-info-demo",
+      "subject_code": "database-systems",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-info-demo",
+      "subject_code": "web-engineering",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-info-demo",
+      "subject_code": "algorithms",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-info-demo",
+      "subject_code": "software-design",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-info-demo",
+      "subject_code": "statistics",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-info-demo",
+      "subject_code": "ai-introduction",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-big-data-demo",
+      "subject_code": "programming-fundamentals",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-big-data-demo",
+      "subject_code": "data-foundations",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-big-data-demo",
+      "subject_code": "database-systems",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-big-data-demo",
+      "subject_code": "web-engineering",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-big-data-demo",
+      "subject_code": "algorithms",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-big-data-demo",
+      "subject_code": "software-design",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-big-data-demo",
+      "subject_code": "statistics",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "lic-big-data-demo",
+      "subject_code": "ai-introduction",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "ing-info-demo",
+      "subject_code": "programming-fundamentals",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "ing-info-demo",
+      "subject_code": "data-foundations",
+      "semester": 1,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "ing-info-demo",
+      "subject_code": "database-systems",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "ing-info-demo",
+      "subject_code": "web-engineering",
+      "semester": 2,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "ing-info-demo",
+      "subject_code": "algorithms",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "ing-info-demo",
+      "subject_code": "software-design",
+      "semester": 3,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "ing-info-demo",
+      "subject_code": "statistics",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    },
+    {
+      "program_code": "ing-info-demo",
+      "subject_code": "ai-introduction",
+      "semester": 4,
+      "credits": "3.0",
+      "is_optional": false
+    }
+  ],
+  "tuition_fees": [
+    {
+      "formation_code": "prepa",
+      "academic_year": "2026-2027",
+      "fee_type": "tuition",
+      "amount": "2400.00",
+      "currency": "TND",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "formation_code": "prepa-demo",
+      "academic_year": "2026-2027",
+      "fee_type": "tuition",
+      "amount": "2500.00",
+      "currency": "TND",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "formation_code": "lic-info",
+      "academic_year": "2026-2027",
+      "fee_type": "tuition",
+      "amount": "2700.00",
+      "currency": "TND",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "formation_code": "lic-big-data",
+      "academic_year": "2026-2027",
+      "fee_type": "tuition",
+      "amount": "2800.00",
+      "currency": "TND",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    },
+    {
+      "formation_code": "ing-info",
+      "academic_year": "2026-2027",
+      "fee_type": "tuition",
+      "amount": "3200.00",
+      "currency": "TND",
+      "is_demo": true,
+      "source_note": "FICTITIOUS DEMO DATA for local development; not an official IIT or ISB curriculum or fee."
+    }
+  ]
+}
