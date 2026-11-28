@@ -36,6 +36,10 @@ class VisitorSession(Base):
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
     )
+    # Set when a visitor creates (or logs into) an account
+    claimed_by_user_id: Mapped[int | None] = mapped_column(
+        ForeignKey("app_user.id", ondelete="SET NULL"), index=True, nullable=True
+    )
 
 
 class VisitorMessage(Base):
