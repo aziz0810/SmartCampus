@@ -21,5 +21,55 @@ services:
       timeout: 3s
       retries: 10
 
+  backend:
+    profiles: ["apps"]
+    build:
+      context: ./backend
+    environment:
+      APP_DB_NAME: ${APP_DB_NAME}
+      APP_DB_USER: ${APP_DB_USER}
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD}
+      DB_HOST: db
+      DB_PORT: 5432
+      FRONTEND_ORIGIN: ${FRONTEND_ORIGIN:-http://localhost:3000}
+      VISITOR_SESSION_TTL_HOURS: ${VISITOR_SESSION_TTL_HOURS:-24}
+      VISITOR_SESSION_MAX_MESSAGES: ${VISITOR_SESSION_MAX_MESSAGES:-100}
+      VISITOR_MEMORY_MAX_MESSAGES: ${VISITOR_MEMORY_MAX_MESSAGES:-20}
+      VISITOR_MESSAGE_MAX_LENGTH: ${VISITOR_MESSAGE_MAX_LENGTH:-4000}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8000:8000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=3)",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 10s
+    volumes:
+      - ./backend:/workspace/backend
+
+  frontend:
+    profiles: ["apps"]
+    build:
+      context: ./frontend
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8000}
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
 volumes:
   smartcampus_pgdata:
