@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from pydantic import Field
+from pydantic import Field, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from sqlalchemy.engine import URL
 
@@ -12,9 +12,11 @@ class Settings(BaseSettings):
 
     db_host: str = "localhost"
     db_port: int = 5432
+    app_env: str = "development"
     app_db_name: str
     app_db_user: str
     app_db_password: str
+    demo_user_password: SecretStr | None = None
     frontend_origin: str = "http://localhost:3000"
     visitor_session_ttl_hours: int = Field(default=24, gt=0, le=168)
     visitor_session_max_messages: int = Field(default=100, gt=0)
