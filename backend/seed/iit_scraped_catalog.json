@@ -9,12 +9,12 @@
       "name": "École d'Architecture Privée à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "51ac6e4466ea68d3badde81f87bc1df476b717a5d9eeef1a2a232b5849f692cd",
+        "consulted_on": "2026-11-28",
+        "content_hash": "705192512bc8f44bbf9cedc7bd59449b062911e66d6889288926890fd3a2e4c9",
         "needs_review": true,
         "source_url": "https://iit.tn/architecture-2/"
       },
-      "source_note": "Source: https://iit.tn/architecture-2/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/architecture-2/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -23,44 +23,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "51ac6e4466ea68d3badde81f87bc1df476b717a5d9eeef1a2a232b5849f692cd",
+            "consulted_on": "2026-11-28",
+            "content_hash": "705192512bc8f44bbf9cedc7bd59449b062911e66d6889288926890fd3a2e4c9",
             "needs_review": true,
             "source_url": "https://iit.tn/architecture-2/"
           },
-          "source_note": "Source: https://iit.tn/architecture-2/; consulted 2026-11-26"
-        }
-      ]
-    },
-    {
-      "code": "formation-continue",
-      "description": "Copyright by IIT Developers © All rights reserved.",
-      "institution_code": "iit",
-      "is_demo": false,
-      "kind": "formation_continue",
-      "name": "Formation Continue à Sfax",
-      "needs_review": true,
-      "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "e455eed373193487ba40c86065910799da4de29847aa05bc9765fd6a66574f36",
-        "needs_review": true,
-        "source_url": "https://iit.tn/formation-continue/"
-      },
-      "source_note": "Source: https://iit.tn/formation-continue/; consulted 2026-11-26",
-      "specialties": [
-        {
-          "code": "general",
-          "description": null,
-          "is_demo": false,
-          "name": "general",
-          "needs_review": true,
-          "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "e455eed373193487ba40c86065910799da4de29847aa05bc9765fd6a66574f36",
-            "needs_review": true,
-            "source_url": "https://iit.tn/formation-continue/"
-          },
-          "source_note": "Source: https://iit.tn/formation-continue/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/architecture-2/; consulted 2026-11-28"
         }
       ]
     },
@@ -73,12 +41,12 @@
       "name": "Cycle Ingénieur Génie Civil à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b8e390c0fac35873711bb9427df4f4a2fca015b8f3925a08e5584db4c3fa1b4f",
+        "consulted_on": "2026-11-28",
+        "content_hash": "791f7611869a74f4f1e2178864d901cb0ee7df31907974e9def3b52142ced860",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-civil/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-civil/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-civil/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -87,12 +55,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "b8e390c0fac35873711bb9427df4f4a2fca015b8f3925a08e5584db4c3fa1b4f",
+            "consulted_on": "2026-11-28",
+            "content_hash": "791f7611869a74f4f1e2178864d901cb0ee7df31907974e9def3b52142ced860",
             "needs_review": true,
             "source_url": "https://iit.tn/filieres-ingenieur/genie-civil/"
           },
-          "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-civil/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-civil/; consulted 2026-11-28"
         }
       ]
     },
@@ -105,12 +73,12 @@
       "name": "Cycle Ingénieur Génie Industriel à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b9f5d54552ef358b202e9506871b07a7e45e4d5eb9cf01338a5e54f80e533a2a",
+        "consulted_on": "2026-11-28",
+        "content_hash": "a2ee220638c9db259c764836c3e971b5b8f79523be0ef2a72526be4410575248",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-industriel-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -119,12 +87,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "b9f5d54552ef358b202e9506871b07a7e45e4d5eb9cf01338a5e54f80e533a2a",
+            "consulted_on": "2026-11-28",
+            "content_hash": "a2ee220638c9db259c764836c3e971b5b8f79523be0ef2a72526be4410575248",
             "needs_review": true,
             "source_url": "https://iit.tn/filieres-ingenieur/genie-industriel-2/"
           },
-          "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28"
         }
       ]
     },
@@ -137,12 +105,12 @@
       "name": "Cycle Ingénieur Génie Mécanique à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "8b4a74933cea2c93320a8838f39d73a21159c4b72755bec9653edf7b8cf21bb2",
+        "consulted_on": "2026-11-28",
+        "content_hash": "93b661e704ce7f1d8e362d1946450942211736b6f13b4f61c9b10ed44a638e9a",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-mecanique-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-mecanique-2/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-mecanique-2/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -151,12 +119,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "8b4a74933cea2c93320a8838f39d73a21159c4b72755bec9653edf7b8cf21bb2",
+            "consulted_on": "2026-11-28",
+            "content_hash": "93b661e704ce7f1d8e362d1946450942211736b6f13b4f61c9b10ed44a638e9a",
             "needs_review": true,
             "source_url": "https://iit.tn/filieres-ingenieur/genie-mecanique-2/"
           },
-          "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-mecanique-2/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-mecanique-2/; consulted 2026-11-28"
         }
       ]
     },
@@ -169,12 +137,12 @@
       "name": "Ingénieur Génie des Procédés à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "225d72f8d85a86569fcbccceacb6437892ad2d12310d206f66caf4a08eb426f8",
+        "consulted_on": "2026-11-28",
+        "content_hash": "e57a84c7fa2dd86f561e2151b7205560fa70ba067f118aea205d9bd4c8235eac",
         "needs_review": true,
         "source_url": "https://iit.tn/genie-des-procedes/"
       },
-      "source_note": "Source: https://iit.tn/genie-des-procedes/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/genie-des-procedes/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -183,12 +151,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "225d72f8d85a86569fcbccceacb6437892ad2d12310d206f66caf4a08eb426f8",
+            "consulted_on": "2026-11-28",
+            "content_hash": "e57a84c7fa2dd86f561e2151b7205560fa70ba067f118aea205d9bd4c8235eac",
             "needs_review": true,
             "source_url": "https://iit.tn/genie-des-procedes/"
           },
-          "source_note": "Source: https://iit.tn/genie-des-procedes/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/genie-des-procedes/; consulted 2026-11-28"
         }
       ]
     },
@@ -201,12 +169,12 @@
       "name": "Cycle Ingénieur Génie Informatique à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "f0b5d0d57128f6d8dcbdd7e6234d2809f24d97c1ea49698a80eeabc499cae254",
+        "consulted_on": "2026-11-28",
+        "content_hash": "baea8a55c365f79e31d959f6d6769eaa1b88695d1ce496eaad697ce2e423aa41",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-informatique-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-informatique-2/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-informatique-2/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -215,12 +183,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "f0b5d0d57128f6d8dcbdd7e6234d2809f24d97c1ea49698a80eeabc499cae254",
+            "consulted_on": "2026-11-28",
+            "content_hash": "baea8a55c365f79e31d959f6d6769eaa1b88695d1ce496eaad697ce2e423aa41",
             "needs_review": true,
             "source_url": "https://iit.tn/filieres-ingenieur/genie-informatique-2/"
           },
-          "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-informatique-2/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-informatique-2/; consulted 2026-11-28"
         }
       ]
     },
@@ -233,12 +201,12 @@
       "name": "Licence Big Data à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "8075c18ded9c580c2bdd493dea994e0982b575aefdb64769b1159d319d61caf3",
+        "consulted_on": "2026-11-28",
+        "content_hash": "66d1ee5659bd86559f960fefa9412be1ec279b9a827f7ca98d27f825a9e85adf",
         "needs_review": true,
         "source_url": "https://iit.tn/big-data-et-analyse-de-donnees/"
       },
-      "source_note": "Source: https://iit.tn/big-data-et-analyse-de-donnees/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/big-data-et-analyse-de-donnees/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -247,12 +215,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "8075c18ded9c580c2bdd493dea994e0982b575aefdb64769b1159d319d61caf3",
+            "consulted_on": "2026-11-28",
+            "content_hash": "66d1ee5659bd86559f960fefa9412be1ec279b9a827f7ca98d27f825a9e85adf",
             "needs_review": true,
             "source_url": "https://iit.tn/big-data-et-analyse-de-donnees/"
           },
-          "source_note": "Source: https://iit.tn/big-data-et-analyse-de-donnees/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/big-data-et-analyse-de-donnees/; consulted 2026-11-28"
         }
       ]
     },
@@ -265,12 +233,12 @@
       "name": "Licence Génie Logiciel à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "914e21000ec95c7db4f6235b4dbc8e9d4fa85849da1d6d08a30cf27086620995",
+        "consulted_on": "2026-11-28",
+        "content_hash": "2b27a45f854602c911a1ed6354d3ac42ea00b236e168ef6fefa417f63a74f276",
         "needs_review": true,
         "source_url": "https://iit.tn/genie-logiciel-systemes-intelligents/"
       },
-      "source_note": "Source: https://iit.tn/genie-logiciel-systemes-intelligents/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/genie-logiciel-systemes-intelligents/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -279,12 +247,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "914e21000ec95c7db4f6235b4dbc8e9d4fa85849da1d6d08a30cf27086620995",
+            "consulted_on": "2026-11-28",
+            "content_hash": "2b27a45f854602c911a1ed6354d3ac42ea00b236e168ef6fefa417f63a74f276",
             "needs_review": true,
             "source_url": "https://iit.tn/genie-logiciel-systemes-intelligents/"
           },
-          "source_note": "Source: https://iit.tn/genie-logiciel-systemes-intelligents/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/genie-logiciel-systemes-intelligents/; consulted 2026-11-28"
         }
       ]
     },
@@ -297,12 +265,12 @@
       "name": "Licence Systèmes Embarqués à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "213430a14ec72f0677bd510e2bedea2a131ccb3e971ca46a1b31ae724ee1c711",
+        "consulted_on": "2026-11-28",
+        "content_hash": "46da38caa2851bda29b819acc9971b3613c67cfaa7d8feff60d44f9c4474a640",
         "needs_review": true,
         "source_url": "https://iit.tn/systemes-embarques-internet-des-objets-iot/"
       },
-      "source_note": "Source: https://iit.tn/systemes-embarques-internet-des-objets-iot/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/systemes-embarques-internet-des-objets-iot/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -311,12 +279,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "213430a14ec72f0677bd510e2bedea2a131ccb3e971ca46a1b31ae724ee1c711",
+            "consulted_on": "2026-11-28",
+            "content_hash": "46da38caa2851bda29b819acc9971b3613c67cfaa7d8feff60d44f9c4474a640",
             "needs_review": true,
             "source_url": "https://iit.tn/systemes-embarques-internet-des-objets-iot/"
           },
-          "source_note": "Source: https://iit.tn/systemes-embarques-internet-des-objets-iot/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/systemes-embarques-internet-des-objets-iot/; consulted 2026-11-28"
         }
       ]
     },
@@ -329,12 +297,12 @@
       "name": "Licence Mécatronique à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "3dc82bde5d137afc080e39d10e0168f5d01de0c22349395e74908c7cfc7c4121",
+        "consulted_on": "2026-11-28",
+        "content_hash": "91eb3b0da589a4f3fa2d71abcd1309b0bb9e7c91eec4cf1b0c4222c3f65cd41c",
         "needs_review": true,
         "source_url": "https://iit.tn/licence-en-mecatronique-systemes-intelligents/"
       },
-      "source_note": "Source: https://iit.tn/licence-en-mecatronique-systemes-intelligents/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/licence-en-mecatronique-systemes-intelligents/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -343,12 +311,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "3dc82bde5d137afc080e39d10e0168f5d01de0c22349395e74908c7cfc7c4121",
+            "consulted_on": "2026-11-28",
+            "content_hash": "91eb3b0da589a4f3fa2d71abcd1309b0bb9e7c91eec4cf1b0c4222c3f65cd41c",
             "needs_review": true,
             "source_url": "https://iit.tn/licence-en-mecatronique-systemes-intelligents/"
           },
-          "source_note": "Source: https://iit.tn/licence-en-mecatronique-systemes-intelligents/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/licence-en-mecatronique-systemes-intelligents/; consulted 2026-11-28"
         }
       ]
     },
@@ -361,12 +329,12 @@
       "name": "Licence Énergies Renouvelables à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "e098fcd9f635ae46391afa40c1ec1f34759930bd485fa5fdb2d4bacd2782b53b",
+        "consulted_on": "2026-11-28",
+        "content_hash": "a3f652553b37ee731b805387952cdac15e858913862e4c76dd460057a767c946",
         "needs_review": true,
         "source_url": "https://iit.tn/licence-en-systemes-electriques-intelligents-energies-renouvelables/"
       },
-      "source_note": "Source: https://iit.tn/licence-en-systemes-electriques-intelligents-energies-renouvelables/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/licence-en-systemes-electriques-intelligents-energies-renouvelables/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -375,12 +343,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "e098fcd9f635ae46391afa40c1ec1f34759930bd485fa5fdb2d4bacd2782b53b",
+            "consulted_on": "2026-11-28",
+            "content_hash": "a3f652553b37ee731b805387952cdac15e858913862e4c76dd460057a767c946",
             "needs_review": true,
             "source_url": "https://iit.tn/licence-en-systemes-electriques-intelligents-energies-renouvelables/"
           },
-          "source_note": "Source: https://iit.tn/licence-en-systemes-electriques-intelligents-energies-renouvelables/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/licence-en-systemes-electriques-intelligents-energies-renouvelables/; consulted 2026-11-28"
         }
       ]
     },
@@ -393,12 +361,12 @@
       "name": "Cycle Préparatoire Ingénieur à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "4e717b38ca14f79be405397ceb39fd09baa98faef6aca746e041b6a540c0d479",
+        "consulted_on": "2026-11-28",
+        "content_hash": "1bb12610b50325238bd409b0dff9ca0c606cc8d88b5b08bb5091ee2634de13fd",
         "needs_review": true,
         "source_url": "https://iit.tn/prepa/"
       },
-      "source_note": "Source: https://iit.tn/prepa/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/prepa/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -407,12 +375,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "4e717b38ca14f79be405397ceb39fd09baa98faef6aca746e041b6a540c0d479",
+            "consulted_on": "2026-11-28",
+            "content_hash": "1bb12610b50325238bd409b0dff9ca0c606cc8d88b5b08bb5091ee2634de13fd",
             "needs_review": true,
             "source_url": "https://iit.tn/prepa/"
           },
-          "source_note": "Source: https://iit.tn/prepa/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/prepa/; consulted 2026-11-28"
         }
       ]
     },
@@ -425,12 +393,12 @@
       "name": "Licence Cybersécurité à Sfax",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b7551f50ac260ca89b630950e52a7ccc0f9d51572b8fad7ddb585aadb8ebabb6",
+        "consulted_on": "2026-11-28",
+        "content_hash": "f6ecdb1e477dc509dbe8f2f6f768365eb6d2a435eb974793919f9ea5eb557bee",
         "needs_review": true,
         "source_url": "https://iit.tn/reseaux-et-cybersecurite/"
       },
-      "source_note": "Source: https://iit.tn/reseaux-et-cybersecurite/; consulted 2026-11-26",
+      "source_note": "Source: https://iit.tn/reseaux-et-cybersecurite/; consulted 2026-11-28",
       "specialties": [
         {
           "code": "general",
@@ -439,12 +407,12 @@
           "name": "general",
           "needs_review": true,
           "provenance": {
-            "consulted_on": "2026-11-26",
-            "content_hash": "b7551f50ac260ca89b630950e52a7ccc0f9d51572b8fad7ddb585aadb8ebabb6",
+            "consulted_on": "2026-11-28",
+            "content_hash": "f6ecdb1e477dc509dbe8f2f6f768365eb6d2a435eb974793919f9ea5eb557bee",
             "needs_review": true,
             "source_url": "https://iit.tn/reseaux-et-cybersecurite/"
           },
-          "source_note": "Source: https://iit.tn/reseaux-et-cybersecurite/; consulted 2026-11-26"
+          "source_note": "Source: https://iit.tn/reseaux-et-cybersecurite/; consulted 2026-11-28"
         }
       ]
     }
@@ -455,17 +423,17 @@
       "is_demo": false,
       "name": "IIT Sfax",
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "4e717b38ca14f79be405397ceb39fd09baa98faef6aca746e041b6a540c0d479",
+        "consulted_on": "2026-11-28",
+        "content_hash": "705192512bc8f44bbf9cedc7bd59449b062911e66d6889288926890fd3a2e4c9",
         "needs_review": true,
-        "source_url": "https://iit.tn/prepa/"
+        "source_url": "https://iit.tn/architecture-2/"
       },
       "website_url": "https://iit.tn"
     }
   ],
   "meta": {
     "catalog_name": "IIT scraped catalog",
-    "consulted_on": "2026-11-26",
+    "consulted_on": "2026-11-28",
     "needs_review": true,
     "notes": [
       "Scraped values are unverified and require human review.",
@@ -473,7 +441,7 @@
       "Scraper-generated formation and subject codes are provisional and require reconciliation with the team's seed catalog before database loading.",
       "No program or tuition-fee rows are emitted unless the source provides the required academic year and fee type explicitly."
     ],
-    "source_count": 20
+    "source_count": 21
   },
   "programs": [],
   "subjects": [
@@ -484,12 +452,12 @@
       "name": "Consulting en gestion et ingénierie",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b9f5d54552ef358b202e9506871b07a7e45e4d5eb9cf01338a5e54f80e533a2a",
+        "consulted_on": "2026-11-28",
+        "content_hash": "a2ee220638c9db259c764836c3e971b5b8f79523be0ef2a72526be4410575248",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-industriel-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-26"
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28"
     },
     {
       "code": "energie-et-environnement",
@@ -498,12 +466,12 @@
       "name": "Énergie et environnement",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b9f5d54552ef358b202e9506871b07a7e45e4d5eb9cf01338a5e54f80e533a2a",
+        "consulted_on": "2026-11-28",
+        "content_hash": "a2ee220638c9db259c764836c3e971b5b8f79523be0ef2a72526be4410575248",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-industriel-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-26"
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28"
     },
     {
       "code": "industrie-manufacturiere-automobile-aeronautique-e",
@@ -512,12 +480,12 @@
       "name": "Industrie manufacturière (automobile, aéronautique, électronique, agroalimentaire, biens de consommation)",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b9f5d54552ef358b202e9506871b07a7e45e4d5eb9cf01338a5e54f80e533a2a",
+        "consulted_on": "2026-11-28",
+        "content_hash": "a2ee220638c9db259c764836c3e971b5b8f79523be0ef2a72526be4410575248",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-industriel-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-26"
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28"
     },
     {
       "code": "logistique-et-supply-chain",
@@ -526,12 +494,12 @@
       "name": "Logistique et supply chain",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b9f5d54552ef358b202e9506871b07a7e45e4d5eb9cf01338a5e54f80e533a2a",
+        "consulted_on": "2026-11-28",
+        "content_hash": "a2ee220638c9db259c764836c3e971b5b8f79523be0ef2a72526be4410575248",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-industriel-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-26"
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28"
     },
     {
       "code": "secteur",
@@ -540,12 +508,12 @@
       "name": "Secteur",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b9f5d54552ef358b202e9506871b07a7e45e4d5eb9cf01338a5e54f80e533a2a",
+        "consulted_on": "2026-11-28",
+        "content_hash": "a2ee220638c9db259c764836c3e971b5b8f79523be0ef2a72526be4410575248",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-industriel-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-26"
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28"
     },
     {
       "code": "services-de-sante",
@@ -554,12 +522,12 @@
       "name": "Services de santé",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b9f5d54552ef358b202e9506871b07a7e45e4d5eb9cf01338a5e54f80e533a2a",
+        "consulted_on": "2026-11-28",
+        "content_hash": "a2ee220638c9db259c764836c3e971b5b8f79523be0ef2a72526be4410575248",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-industriel-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-26"
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28"
     },
     {
       "code": "technologies-de-linformation-et-de-la-communicatio",
@@ -568,12 +536,12 @@
       "name": "Technologies de l’information et de la communication (TIC)",
       "needs_review": true,
       "provenance": {
-        "consulted_on": "2026-11-26",
-        "content_hash": "b9f5d54552ef358b202e9506871b07a7e45e4d5eb9cf01338a5e54f80e533a2a",
+        "consulted_on": "2026-11-28",
+        "content_hash": "a2ee220638c9db259c764836c3e971b5b8f79523be0ef2a72526be4410575248",
         "needs_review": true,
         "source_url": "https://iit.tn/filieres-ingenieur/genie-industriel-2/"
       },
-      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-26"
+      "source_note": "Source: https://iit.tn/filieres-ingenieur/genie-industriel-2/; consulted 2026-11-28"
     }
   ],
   "tuition_fees": []
