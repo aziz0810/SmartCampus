@@ -5,25 +5,18 @@ environment, inside the backend container). Skipped when it is unreachable.
 
 Safety: inserted rows are demo rows (``is_demo=true``) inside a transaction
 that is always rolled back. The downgrade/upgrade round trip only runs when
-the SA-12 tables are empty, so it never deletes loaded data.
+the database is empty, so it never deletes loaded data.
 """
 
-import os
-import subprocess
-import sys
 from decimal import Decimal
-from pathlib import Path
 
 import pytest
-from dotenv import dotenv_values
-from sqlalchemy import create_engine, inspect, select, text
-from sqlalchemy.engine import URL
-from sqlalchemy.exc import IntegrityError, OperationalError
+from sqlalchemy import inspect, select
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
-BACKEND_DIR = Path(__file__).resolve().parents[2]
-ENV_FILE = BACKEND_DIR.parent / ".env"
-DB_KEYS = ("DB_HOST", "DB_PORT", "APP_DB_NAME", "APP_DB_USER", "APP_DB_PASSWORD")
+from pg_helpers import downgrade_round_trip
+
 SA12_TABLES = (
     "qualification",
     "admission_condition",
@@ -33,72 +26,6 @@ SA12_TABLES = (
 )
 PREVIOUS_REVISION = "9b20a2c83f71"
 SOURCE_NOTE = "SA-12 test (fictional demo row)"
-
-
-def _db_env() -> dict[str, str]:
-    """Database settings: the root .env wins, so values set by other test
-    modules (e.g. sqlite placeholders) cannot redirect this test."""
-    values = {key: os.environ[key] for key in DB_KEYS if key in os.environ}
-    if ENV_FILE.exists():
-        file_values = dotenv_values(ENV_FILE)
-        values.update({k: v for k in DB_KEYS if (v := file_values.get(k))})
-    return values
-
-
-DB_ENV = _db_env()
-
-
-def _url() -> URL:
-    return URL.create(
-        drivername="postgresql+psycopg",
-        username=DB_ENV.get("APP_DB_USER"),
-        password=DB_ENV.get("APP_DB_PASSWORD"),
-        host=DB_ENV.get("DB_HOST", "localhost"),
-        port=int(DB_ENV.get("DB_PORT", "5432")),
-        database=DB_ENV.get("APP_DB_NAME"),
-    )
-
-
-def _alembic(*args: str) -> None:
-    env = {**os.environ, **DB_ENV}
-    result = subprocess.run(
-        [sys.executable, "-m", "alembic", *args],
-        cwd=BACKEND_DIR,
-        env=env,
-        capture_output=True,
-        text=True,
-    )
-    assert result.returncode == 0, result.stderr
-
-
-@pytest.fixture(scope="module")
-def engine():
-    if not all(DB_ENV.get(k) for k in ("APP_DB_NAME", "APP_DB_USER", "APP_DB_PASSWORD")):
-        pytest.skip("PostgreSQL settings not configured")
-    engine = create_engine(_url(), connect_args={"connect_timeout": 3})
-    try:
-        with engine.connect():
-            pass
-    except OperationalError:
-        engine.dispose()
-        pytest.skip("PostgreSQL is not reachable")
-    _alembic("upgrade", "head")
-    yield engine
-    engine.dispose()
-
-
-@pytest.fixture
-def session(engine):
-    """A session whose work is always rolled back."""
-    connection = engine.connect()
-    transaction = connection.begin()
-    db = Session(bind=connection, join_transaction_mode="create_savepoint")
-    try:
-        yield db
-    finally:
-        db.close()
-        transaction.rollback()
-        connection.close()
 
 
 def _catalog(db: Session):
@@ -281,18 +208,4 @@ def test_formation_with_admission_conditions_cannot_be_deleted(session):
 
 
 def test_downgrade_then_upgrade(engine):
-    with engine.connect() as connection:
-        counts = {
-            table: connection.execute(text(f"SELECT count(*) FROM {table}")).scalar_one()
-            for table in SA12_TABLES
-        }
-    if any(counts.values()):
-        pytest.skip(f"SA-12 tables contain data, not downgrading: {counts}")
-
-    _alembic("downgrade", PREVIOUS_REVISION)
-    try:
-        remaining = set(inspect(engine).get_table_names()) & set(SA12_TABLES)
-        assert remaining == set()
-    finally:
-        _alembic("upgrade", "head")
-    assert set(SA12_TABLES) <= set(inspect(engine).get_table_names())
+    downgrade_round_trip(engine, PREVIOUS_REVISION, SA12_TABLES)
