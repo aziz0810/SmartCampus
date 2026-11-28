@@ -9,6 +9,7 @@ from app.models.catalog import (
     TuitionFee,
 )
 from app.models.identity import AppUser, Role
+from app.models.visitor import VisitorMessage, VisitorSession
 
 __all__ = [
     "AppUser",
@@ -21,4 +22,6 @@ __all__ = [
     "Specialty",
     "Subject",
     "TuitionFee",
+    "VisitorMessage",
+    "VisitorSession",
 ]
