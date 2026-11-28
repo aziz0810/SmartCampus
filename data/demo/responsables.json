@@ -1,0 +1,16 @@
+[
+  {
+    "email": "responsable.iit@example.test",
+    "full_name": "Responsable IIT (démo)",
+    "role": "responsable_iit",
+    "institution_code": "IIT",
+    "password_env": "DEMO_PASSWORD"
+  },
+  {
+    "email": "responsable.isb@example.test",
+    "full_name": "Responsable ISB (démo)",
+    "role": "responsable_isb",
+    "institution_code": "ISB",
+    "password_env": "DEMO_PASSWORD"
+  }
+]

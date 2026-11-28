@@ -1,0 +1,33 @@
+{
+  "_notice": "Données entièrement fictives pour le développement; ne jamais présenter comme des informations officielles.",
+  "academic_year": "2026-2027",
+  "formations": [
+    {
+      "institution_code": "IIT",
+      "code": "DEMO-LICENCE-INFO",
+      "name": "Licence Informatique (démonstration)",
+      "kind": "Licence",
+      "publication_status": "published",
+      "valid_from": "2026-09-01",
+      "valid_to": "2027-08-31"
+    },
+    {
+      "institution_code": "IIT",
+      "code": "DEMO-CYCLE-PREPARATOIRE",
+      "name": "Cycle préparatoire scientifique (démonstration)",
+      "kind": "Préparatoire",
+      "publication_status": "published",
+      "valid_from": "2026-09-01",
+      "valid_to": "2027-08-31"
+    },
+    {
+      "institution_code": "ISB",
+      "code": "DEMO-ING-GESTION",
+      "name": "Parcours ingénierie de gestion (brouillon de démonstration)",
+      "kind": "Ingénierie",
+      "publication_status": "draft",
+      "valid_from": "2026-09-01",
+      "valid_to": "2027-08-31"
+    }
+  ]
+}
