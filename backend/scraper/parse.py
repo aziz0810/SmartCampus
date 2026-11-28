@@ -307,10 +307,10 @@ def parse_index(page: SeedPage, document: FetchedDocument, allowlisted_urls: set
     return PageResult(coverage={
         "url": document.url,
         "consulted_on": document.consulted_on,
-        "found": ["page headings", "allowlisted formation links"],
+        "found": ["page headings", "discovered same-site links"],
         "missing": ["formation details on index page"],
         "notes": [
-            f"Observed allowlisted links: {', '.join(links) if links else 'none'}; no links were followed.",
+            f"Observed discovered same-site links: {', '.join(links) if links else 'none'}.",
             f"Observed {len(headings)} headings.",
         ],
     })

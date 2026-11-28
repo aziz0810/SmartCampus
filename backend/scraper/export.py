@@ -102,7 +102,7 @@ def write_outputs(catalog: dict, coverage: list[dict], catalog_path: Path = CATA
     lines = [
         "# IIT scraper coverage",
         "",
-        "Coverage is based only on the allowlisted pages. No values were inferred; missing values remain absent or null.",
+        "Coverage lists pages discovered from BASE_URL and processed within the configured crawl limit. No values were inferred; missing values remain absent or null.",
         "",
         "| Page | Found | Missing | Notes |",
         "| --- | --- | --- | --- |",

@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from datetime import date
 from io import BytesIO
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urldefrag, urljoin, urlparse
 from urllib.robotparser import RobotFileParser
 
 import httpx
@@ -248,8 +248,6 @@ class PoliteFetcher:
             return None
 
     def fetch_page(self, page) -> FetchedDocument:
-        if page not in SEED_PAGES:
-            raise ValueError("Only explicitly allowlisted seed pages may be fetched")
         if self.robot_parser is None:
             self.check_robots()
         if not self.robot_parser.can_fetch(self.settings.user_agent, page.url):
@@ -291,3 +289,33 @@ class PoliteFetcher:
             newline="\n",
         )
         return FetchedDocument(page.url, safe_content, content_hash, consulted_on, content_type, False)
+
+    def discover_links(self, document: FetchedDocument) -> list[str]:
+        """Return canonical same-site links from an already sanitized HTML page."""
+        if "html" not in document.content_type:
+            return []
+        soup = BeautifulSoup(document.content, "lxml")
+        urls = set()
+        for anchor in soup.select("a[href]"):
+            href = str(anchor.get("href", "")).strip()
+            if not href or href.startswith(("#", "mailto:", "tel:", "javascript:")):
+                continue
+            target, _fragment = urldefrag(urljoin(document.url, href))
+            parsed = urlparse(target)
+            if parsed.scheme != "https" or parsed.hostname != "iit.tn":
+                continue
+            if any(character.isspace() for character in parsed.path):
+                continue
+            suffix = Path(parsed.path).suffix.lower()
+            if suffix and suffix not in {".pdf"}:
+                continue
+            # Drop query strings (tracking and search URLs) and normalize paths.
+            path = parsed.path.rstrip("/")
+            if not path:
+                path = "/"
+            normalized = f"https://iit.tn{path}" if suffix else (f"https://iit.tn{path}/" if path != "/" else "https://iit.tn/")
+            if normalized == document.url:
+                continue
+            if self.robot_parser and self.robot_parser.can_fetch(self.settings.user_agent, normalized):
+                urls.add(normalized)
+        return sorted(urls)

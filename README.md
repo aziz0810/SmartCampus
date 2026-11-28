@@ -41,8 +41,9 @@ Set-Location backend
 ```
 
 The scraper checks IIT's `robots.txt` before requesting pages, uses the
-configured project user agent, follows only the allowlisted IIT URLs, waits at
-least two seconds between requests, and caps requests at 40 pages. It removes
+configured project user agent, discovers and follows HTTPS links on `iit.tn`
+starting at `BASE_URL`, waits at least two seconds between requests, and caps
+requests at 40 pages. The cap applies to discovered pages as well. It removes
 contact details, student-result/news panels, and bank details before writing
 its ignored local cache. It does not write to PostgreSQL.
 
