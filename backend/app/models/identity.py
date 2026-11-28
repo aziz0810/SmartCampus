@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from sqlalchemy import Boolean, DateTime, ForeignKey, String, text
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.models.base import Base, TimestampMixin
 
@@ -29,3 +29,6 @@ class AppUser(TimestampMixin, Base):
         ForeignKey("institution.id", ondelete="RESTRICT"), index=True
     )
     last_login_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+    # Relationships
+    role: Mapped["Role"] = relationship("Role", lazy="joined")

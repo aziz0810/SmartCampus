@@ -21,6 +21,10 @@ class Settings(BaseSettings):
     visitor_memory_max_messages: int = Field(default=20, gt=0, le=100)
     visitor_message_max_length: int = Field(default=4000, gt=0, le=20000)
 
+    # JWT
+    jwt_secret_key: str = "CHANGE_ME_IN_DOT_ENV"
+    jwt_access_token_ttl_minutes: int = Field(default=60 * 8, gt=0)  # 8 hours
+
     @property
     def database_url(self) -> URL:
         return URL.create(
