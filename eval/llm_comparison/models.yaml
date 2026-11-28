@@ -1,0 +1,36 @@
+benchmark:
+  repeats: 3
+  temperature: 0
+  seed: 42
+  max_output_tokens: 512
+  timeout_seconds: 120
+  ollama_base_url: http://localhost:11434
+  human_sample_per_language: 5
+  random_seed: 42
+  weights:
+    quality: 0.4
+    latency: 0.2
+    cost: 0.2
+    reliability: 0.2
+
+models:
+  - id: phi3
+    provider: ollama
+    tag: phi3
+    enabled: true
+  - id: gemma2-2b
+    provider: ollama
+    tag: gemma2:2b
+    enabled: true
+  - id: llama3.2
+    provider: ollama
+    tag: llama3.2
+    enabled: true
+  - id: mistral
+    provider: ollama
+    tag: mistral
+    enabled: true
+  - id: qwen3.5-4b
+    provider: ollama
+    tag: qwen3.5:4b
+    enabled: true

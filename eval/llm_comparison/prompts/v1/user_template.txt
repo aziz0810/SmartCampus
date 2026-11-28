@@ -1,0 +1,5 @@
+Task: {task_type}
+User language/style: {language_style}
+Task-specific instructions: {task_instruction}
+{context_block}User message:
+{prompt}
